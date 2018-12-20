@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组反转</title>
+</head>
+<body>
+字符串：<input type="text" id="fanzhuan" value="abcdefg">
+<button onclick="fanzhuan1()">字符串反转利用循环</button><br>
+<button onclick="fanzhuan2()">字符串反转利用数组的reverse方法</button><br>
+</body>
+<script>
+    function fanzhuan1(){
+        var a=document.getElementById("fanzhuan").value
+        var temp="";
+        for(var i=a.length-1;i>=0;i--){
+            temp+=a.charAt(i);
+        }
+        // $('#name1').val('值');
+        document.getElementById("fanzhuan").value=temp
+    }
+    function fanzhuan2(){
+        var a=document.getElementById("fanzhuan").value
+        alert(a.split("") //将字符串转换为字符数组
+            .reverse()   //将数组中的字进行倒转
+            .join("")); //将数组中的字符拼接回字符串
+    }
+</script>
+</html>

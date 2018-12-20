@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="javascript:openWindow('https://www.baidu.com/')">click me</a><br>
+<a href="#" onclick="openWindow('https://www.baidu.com/');return false">click me1</a><br>
+<a href="https://www.baidu.com/" onclick="openWindow('https://www.baidu.com/');return false" >click me2(禁用js也能跳转)</a><br>
+<a href="https://www.baidu.com/" class="fenli">分离JavaScript</a><br>
+<span>处于性能考虑：1尽量减少对DOM的遍历（查询DOM会遍历整个DOM树） 2合并脚本数量，减少访问次数，放置位置最好在/body之前
+3 通过工具压缩，删除不必要字符</span>
+</body>
+<script>
+    function openWindow(url){
+        window.open(url,"wsk","width=300,height=300")
+    }
+    window.onload=function () {
+        if(!document.getElementsByTagName){
+            return "该浏览器不支持getElementsByTagName方法"
+        }
+        var links=document.getElementsByTagName("a")
+        for (var i=0,j=links.length;i<j;i++){
+            if (links[i].getAttribute("class")===fenli) {
+                links[i].onclick=function () {
+                    openWindow(links[i].getAttribute("href"));
+                    return false;
+                }
+            }
+        }
+    }
+</script>
+</html>

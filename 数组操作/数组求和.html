@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组求和</title>
+</head>
+<body>
+数组为：{1,6,9.9,2.35}
+<button onclick="sum1()">普通for循环求和</button><br>
+<button onclick="sum2()">不考虑算法复杂度，可以用递归</button><br>
+<button onclick="sum3()">函数式编程</button><br>
+<button onclick="sum4()">foreach循环</button><br>
+<button onclick="sum5()">aval方法</button><br>
+</body>
+<script>
+    var atr = [1, 6, 9.9, 2.35];
+
+    function sum1() {
+        var sum1 = 0;
+        for (var i = 0, j = atr.length; i < j; i++) {
+            sum1 += atr[i]
+        }
+        alert(sum1)
+    }
+
+    function sum2(){
+       var sum2=digui(atr)
+        alert(sum2)
+    }
+    function digui(atr) {
+        var j = atr.length
+        if (j === 0) {
+            return 0
+        } else if (j === 1) {
+            return atr[0]
+        } else {
+            return atr[0]+digui(atr.slice(1))
+        }
+    }
+    function sum3() {
+        return atr.reduce(function(prev, curr, idx, atr){
+            return prev + curr;
+        });
+    }
+    function sum4(){
+        var sum4 = 0;
+        atr.forEach(function (val, idx, arr) {
+            // val:必须的，当前元素 idx:可选的，当前索引 arr：可选，数组对象
+           sum4+=val;
+        })
+        alert(sum4)
+    }
+    function sum5() {
+        alert(eval(atr.join("+")))
+    };
+</script>
+</html>

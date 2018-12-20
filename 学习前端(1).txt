@@ -1,0 +1,352 @@
+https://ke.qq.com/course/198306
+https://ke.qq.com/course/215746
+
+运行一下
+
+node.js使用：
+npm install
+npm run dev
+
+yarn ：进入项目目录 yarn run dev 
+git: git add.
+     git comnmit -m "本次改动注释"
+     git push origin dev 
+先拉去代码：git pull
+
+问诊 测试
+wwwwwwaaaaa  
+
+jQuery学习：
+   1 隐藏和显示  hide() 和 show() 例子：$("p").hide(1000); 通过 jQuery，您可以使用 toggle() 方法来切换       hide() 和 show() 方法。
+   2 jQuery fadeIn() 用于淡入已隐藏的元素。jQuery fadeOut() 方法用于淡出可见元素。jQuery fadeToggle() 方法      可以在 fadeIn() 与 fadeOut() 方法之间进行切换。
+   3 jQuery slideDown() 方法用于向下滑动元素。slideUp() 方法用于向上滑动元素。
+     jQuery slideToggle() 方法可以在 slideDown() 与 slideUp() 方法之间进行切换。
+      如果元素向下滑动，则 slideToggle() 可向上滑动它们。
+      如果元素向上滑动，则 slideToggle() 可向下滑动它们。
+  4   jQuery animate() 方法用于创建自定义动画。stop() 方法用于停止动画或效果，在它们完成之前。
+
+30个CSS3选择器
+*：通用元素选择器
+#ID：ID选择器
+.class:类选择器
+X Y：标签组合选择器
+X：标签选择器
+X:visited and X:link
+X + Y：毗邻元素选择器
+X > Y：子元素选择器
+X ~ Y：匹配任何在X元素之后的同级Y元素
+X[title]：属性选择器?
+X[href="foo"]
+X[href*="nettuts"]?
+X[href^="http"]
+X[href$=".jpg"]
+X[data-*="foo"]
+X[foo~="bar"]?匹配属性中具有多个空格分隔的值、其中一个值等于“bar”的X元素
+X:checked 这个选择器主要用于checkbox
+X:after? before 和after是在选择的标签之前或者之后插入内容，一般用于清除浮动
+X:hover 选择鼠标指针浮动在其上的元素，并设置其样式：
+X:not(selector) 设置非 <p> 元素的所有元素的背景色：
+p::first-line  p::first-letter 分别用于匹配元素的第一行和第一个字母
+X:nth-child(n) 例如：div p:nth-child(4)匹配X元素中从头数第几个标签 从1计数
+X:nth-last-child(n)?这个选择器是倒序匹配第几个标签
+X:nth-of-type(n)
+X:nth-last-of-type(n)
+X:first-child 例如：ul li:first-child { border-top: none; }
+X:last-child? 
+X:only-child?
+X:only-of-type
+X:first-of-type
+
+JS知识：
+	 1.for(var i=0;i<arr.length;i++)
+         2.for(var i in arr)
+	 3.for(var i=0,len=arr.length;i<len;i++) 
+	 第三种效率更高！
+substr() 方法可在字符串中抽取从 start 下标开始的指定数目的字符。
+toUpperCase() 方法用于把字符串转换为大写。相反的toLowerCase（）
+dom增删查改？
+        增：
+                document.createElement(tag);
+                document.createTextNode();
+                document.createDocumentFragment() 
+                dom.appendChild(sondom);
+                dom.insertBefore(newdom,targetdom);
+        删：
+                document.removeChild();
+        改：
+                document.replaceChild();
+        查：
+                getElementById()
+                getElementsByTagName()
+                getElementsByName();
+HTML状态码：
+	100——客户必须继续发出请求
+	101——客户要求服务器根据请求转换HTTP协议版本
+	200——交易成功
+	201——提示知道新文件的URL
+	202——接受和处理、但处理未完成
+	203——返回信息不确定或不完整
+	204——请求收到，但返回信息为空
+	205——服务器完成了请求，用户代理必须复位当前已经浏览过的文件
+	206——服务器已经完成了部分用户的GET请求
+	300——请求的资源可在多处得到
+	301——删除请求数据
+	302——在其他地址发现了请求数据
+	303——建议客户访问其他URL或访问方式
+	304——客户端已经执行了GET，但文件未变化
+	305——请求的资源必须从服务器指定的地址得到
+	306——前一版本HTTP中使用的代码，现行版本中不再使用
+	307——申明请求的资源临时性删除
+	400——错误请求，如语法错误
+	401——请求授权失败
+	402——保留有效ChargeTo头响应
+	403——请求不允许
+	404——没有发现文件、查询或URl
+	405——用户在Request-Line字段定义的方法不允许
+	406——根据用户发送的Accept拖，请求资源不可访问
+	407——类似401，用户必须首先在代理服务器上得到授权
+	408——客户端没有在用户指定的时间内完成请求
+	409——对当前资源状态，请求不能完成
+	410——服务器上不再有此资源且无进一步的参考地址
+	411——服务器拒绝用户定义的Content-Length属性请求
+	412——一个或多个请求头字段在当前请求中错误
+	413——请求的资源大于服务器允许的大小
+	414——请求的资源URL长于服务器允许的长度
+	415——请求资源不支持请求项目格式
+	416——请求中包含Range请求头字段，在当前请求资源范围内没有range指示值，请求也不包含If-Range请求头字段
+	417——服务器不满足请求Expect头字段指定的期望值，如果是代理服务器，可能是下一级服务器不能满足请求
+	500——服务器产生内部错误
+	501——服务器不支持请求的函数
+	502——服务器暂时不可用，有时是为了防止发生系统过载
+	503——服务器过载或暂停维修
+	504——关口过载，服务器使用另一个关口或服务来响应用户，等待时间设定值较长
+	505——服务器不支持或拒绝支请求头中指定的HTTP版本
+
+Jquery：
+	jQuery 元素选择器
+		jQuery 使用 CSS 选择器来选取 HTML 元素。
+		$("p") 选取 <p> 元素。
+		$("p.intro") 选取所有 class="intro" 的 <p> 元素。
+		$("p#demo") 选取所有 id="demo" 的 <p> 元素。
+	jQuery 属性选择器
+		jQuery 使用 XPath 表达式来选择带有给定属性的元素。
+		$("[href]") 选取所有带有 href 属性的元素。
+		$("[href='#']") 选取所有带有 href 值等于 "#" 的元素。
+		$("[href!='#']") 选取所有带有 href 值不等于 "#" 的元素。
+		$("[href$='.jpg']") 选取所有 href 值以 ".jpg" 结尾的元素。
+	元素的淡入淡出：
+  jQuery 拥有下面四种 fade 方法：
+	fadeIn(speed,callback) 用于淡入已隐藏的元素。 可选的speed 参数规定效果的时长。可取："slow"、"fast" 或毫秒。可选的 callback 参数是 fading 完成后所执				行的函数名称。
+	fadeOut(speed,callback) 可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。可选的 callback 参数是 fading 完成后所执行的函数名称
+	fadeToggle(speed,callback)方法可以在 fadeIn() 与 fadeOut() 方法之间进行切换。如果元素已淡出，则 fadeToggle() 会向元素添加淡入效果。如果元素已淡入，				则 fadeToggle() 会向元素添加淡出效果。
+	fadeTo()	法允许渐变为给定的不透明度（值介于 0 与 1 之间）。
+滑动效果：
+  $(selector).slideDown(speed,callback); 向下滑动元素，speed（可选）可取："slow"、"fast" 或毫秒。callback 滑动完成后所执行的函数名称
+  $(selector).slideUp(speed,callback) 方法用于向上滑动元素。speed（可选）可取："slow"、"fast" 或毫秒。callback 滑动完成后所执行的函数名称
+  slideToggle() 方法可以在 slideDown() 与 slideUp() 方法之间进行切换。
+动画效果：
+  $(selector).animate({params},speed,callback); 必需的 params 参数定义形成动画的 CSS 属性。speed（可选）可取："slow"、"fast" 或毫秒。callback 滑动完成后所执行的函数名称
+$(selector).stop(stopAll,goToEnd);用于停止动画或效果，在它们完成之前。stop() 方法适用于所有 jQuery 效果函数，包括滑动、淡入淡出和自定义动hua
+
+获取Dom内容
+	获得（设置）内容 - text()、html() 以及 val()  attr() 方法用于获取（设置）属性值。（.attr("href"));）
+	添加新内容的四个 jQuery 方法：
+		append() - 在被选元素的结尾插入内容
+		prepend() - 在被选元素的开头插入内容
+		after() - 在被选元素之后插入内容
+		before() - 在被选元素之前插入内容
+	需删除元素和内容，一般可使用以下两个 jQuery 方法：
+		remove() - 删除被选元素（及其子元素）
+		empty() - 从被选元素中删除子元素
+	addClass removeClass toggleClass（进行添加/删除类的切换操作）
+DOM遍历：
+	parent() 方法返回被选元素的直接父元素。
+	parents() 方法返回被选元素的所有祖先元素
+	parentsUntil() 方法返回介于两个给定元素之间的所有祖先元素。
+	children() 方法返回被选元素的所有直接子元素
+	find() 方法返回被选元素的后代元素
+	DOM 树进行水平遍历：
+		siblings() 所有同胞元素
+		next()下一个同胞元素。
+		nextAll()所有跟随的同胞元素。
+		nextUntil()于两个给定参数之间的所有跟随的同胞元素。
+		prev() 上一个同胞元素
+		prevAll() 该元素之前的所有同胞元素
+		prevUntil() 于两个给定参数之间的所有跟随的同胞元素。
+	first(), last() 和 eq()，它们允许您基于其在一组元素中的位置来选择一个特定的元素。
+Node.js
+	Chrome v8引擎建立的JavaScript运行平台，Node.js 使用事件驱动， 单线程 非阻塞I/O 模型而得以轻量和高效，非常适合在分布式设备上运行数据密集型的实时应用。
+	使用‘流’时注意文件编码格式
+5.31：内联元素 块元素 
+6.1：基本完成查找医生的主页面（差一个返回图标）  2 搞清楚数据绑定，将接口数据显示在页面
+6.5  1 完成昨天未完成的患者端首页  2 学习写vue的方法
+6.6 1 模仿写了选择科室界面 2 下午整理医院预算系统代码 修改bug 上传至SVN 
+6.7 写新闻动态列表和详情界面   学习Vue路由
+6.13 获取元素 操作元素 赋值
+6.14 js绑定内联样式和定时器学习 确认支付和支付完成界面
+7.3 医生评价打星界面、评价列表、医生参与问答界面、预约挂号、我的问诊界面
+
+7.4 确认预约 确认支付 支付成功 新增就诊人
+7.5  图文问诊 和图文问诊确认支付界面
+
+VUE：
+	图片的src属性，需要这样v-bind:src="src"
+	<p slot="label"></p> 这样调用是替换插槽
+	伪元素 必须设置 content 属性若不设置，则伪元素不会显示。如果不想设置 content 的内容，可以将内容设置为空。
+	URL 进入多层想要跳转到更目录，用‘/’
+	根据Vue2.0官方文档关于父子组件通讯的原则，父组件通过prop传递数据给子组件，子组件触发事件给父组件。但父组件想在子组件上监听自己的click的话，需要加上native修饰符。
+	  所以如果在想要在router-link上添加事件的话需要@click.native这样写
+	点击a标签，获取当前页面的url参数失败，我理解a标签点击过后，当前的url已经改变，可以再	进入页面时，先获取参数保存，点击时候直接传参数
+
+
+伪元素：:before和:after时必须设置其content属性，否则伪元素就不起作用。
+导航：1想要导航到不同的 URL，则使用 router.push 方法。这个方法会向 history 栈添加一个新的记录		所以，当用户点击浏览器后退按钮时，则回到之前的 URL。
+	2 router.replace(location)和	router.push功能类似，但是不会入栈（注：子路由返回时，	不会在当前页面来回切换）
+	3 router.go(n)前进或者后退多少步，记录不够默认失败	
+	4 界面上字符串拼接用``符号（键盘ESC下一排第一个）
+	5 var let const 区分：作用域 const声明一个只读的常量（变量指向的那个内存地址不得改动）
+跳转：query 和path 在一起使用 ， 而params和name一起使用
+	// 字符串
+	this.$router.push('/home/first')
+
+	// 对象
+	this.$router.push({ path: '/home/first' })
+
+	// 命名的路由
+	this.$router.push({ path：'home', query: { userId: wise }})
+
+
+数据变化：
+push() 新增一个元素
+pop()  方法将删除 arrayObject 的最后一个元素，把数组长度减 1，并且返回它删除的元素的值。如果	数组已经为空，则 pop() 不改变数组，并返回 undefined 值。
+shift() 方法用于把数组的第一个元素从其中删除，并返回第一个元素的值。
+unshift() 方法可向数组的开头添加一个或更多元素，并返回新的长度。
+splice(index,howmany,item1,.....,itemX)
+	 方法向/从数组中添加/删除项目，然后返回被删除的项目。
+	index	必需。整数，规定添加/删除项目的位置，使用负数可从数组结尾处规定位置。
+	howmany	必需。要删除的项目数量。如果设置为 0，则不会删除项目。
+	item1, ..., itemX	可选。向数组添加的新项目。
+sort() 排序
+reverse() 方法用于颠倒数组中元素的顺序。
+注：以上方法改变数组时，试图均会发生变化，以下两个方法视图不会改变
+	由于 JavaScript 的限制，Vue 不能检测以下变动的数组（仅视图不更新）：
+	当你利用索引直接设置一个项时，例如：vm.items[indexOfItem] = newValue
+	当你修改数组的长度时，例如：vm.items.length = newLength
+解决问题1：
+	// Vue.set
+	Vue.set(vm.items, indexOfItem, newValue)
+	// Array.prototype.splice
+	vm.items.splice(indexOfItem, 1, newValue)
+问题2：
+	vm.items.splice(newLength)
+
+
+数组过滤 filter
+导航切换效果：
+	1 可以使用子路由实现	
+	2 通过 Vue 的 <component> 元素加一个特殊的 is 特性来实现：  
+
+操作LocalStorage SessionStorage
+  // LocalStorage 存储
+    this.$storage.set('token', 12345)
+    this.$storage.get('token')
+
+// SessionStorage 存储
+this.$storage.alter('S')
+this.$storage.set('big', 5432)
+this.$storage.get('big')
+this.$storage.alter()
+
+
+
+ES6：
+ES6排名前十的最佳特性列表（排名不分先后）：
+	Default Parameters（默认参数） in ES6
+	Template Literals （模板文本）in ES6
+	Multi-line Strings （多行字符串）in ES6
+	Destructuring Assignment （解构赋值）in ES6
+	Enhanced Object Literals （增强的对象文本）in ES6
+	Arrow Functions （箭头函数）in ES6
+	Promises in ES6
+	Block-Scoped Constructs Let and Const（块作用域构造Let and Const）
+	Classes（类） in ES6
+	Modules（模块） in ES6
+1 默认参数 我们可以直接把默认值放在函数申明里：
+var link = function(height = 50, color = 'red', url = 'http://azat.co') {
+  ...
+}
+2 模板文本
+	在ES5，我们可以这样组合一个字符串：
+	var name = 'Your name is ' + first + ' ' + last + '.';
+	var url = 'http://localhost:3000/api/messages/' + id;
+	幸运的是，在ES6中，我们可以使用新的语法$ {NAME}，并把它放在反引号里：
+	var name = `Your name is ${first} ${last}. `;
+	var url = `http://localhost:3000/api/messages/${id}`;
+
+3 多行字符串
+	之前用的是加号拼接的方式，然而在ES6中，仅仅用反引号就可以解决了：``(ESC下一行的第一个键位)
+
+4 解构赋值问题
+	var { house, mouse} = $('body').data(); // we'll get house and mouse variables
+	var {jsonMiddleware} = require('body-parser');
+	var {username, password} = req.body;
+数组“：
+	var [col1, col2]  = $('.column'),
+	   [line1, line2, line3, , line5] = file.split('n');
+
+
+6.Arrow Functions in（箭头函数） ES6
+	前我们使用闭包，this总是预期之外地产生改变，而箭头函数的迷人之处在于，现在你的this可以按照你的预期使用了，身处箭头函数里面，this还是原来的this。有了箭头函数在ES6中， 我们就不必用that = this或 self =  this  或 _this = this  或.bind(this)。
+	ES5：
+	var _this = this;
+	$('.btn').click(function(event) {
+	  _this.sendData();
+	});
+	ES6：
+	$('.btn').click((event) => {
+	  this.sendData();
+	});
+		
+	
+7. Promises in ES6
+	
+简单的用setTimeout()实现的异步延迟加载函数:
+setTimeout(function() {
+  console.log('Yay!');
+}, 1000);
+
+在ES6中，我们可以用promise重写:
+var wait1000 =  new Promise(function(resolve, reject) {
+  setTimeout(resolve, 1000);
+}).then(function() {
+  console.log('Yay!');
+});
+或者用ES6的箭头函数：
+var wait1000 =  new Promise((resolve, reject)=> {
+  setTimeout(resolve, 1000);
+}).then(()=> {
+  console.log('Yay!');
+});
+ 
+js数据类型：
+	isNaN()的缺点就在于 null、空格以及空串会被按照0来处理
+
+严格模式：
+	‘use strict’.
+	消除Javascript语法的一些不合理、不严谨之处，减少一些怪异行为;
+	- 消除代码运行的一些不安全之处，保证代码运行的安全；
+	- 提高编译器效率，增加运行速度；
+	- 为未来新版本的Javascript做好铺垫。
+严格模式下不能用前缀0表示八进制
+
+箭头函数：
+	1 箭头函数直接返回一个对象，必须在对象外面加上括号
+
+	例子：
+	// 箭头函数写法
+	[1,2,3].map(x => x * x);
+箭头函数有几个使用注意点。
+（1）函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。
+（2）不可以当作构造函数，也就是说，不可以使用new命令，否则会抛出一个错误。
+（3）不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用 rest 参数代替。
+（4）不可以使用yield命令，因此箭头函数不能用作 Generator 函数。

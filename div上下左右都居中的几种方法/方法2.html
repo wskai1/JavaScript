@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div上下左右都居中</title>
+    <style type="text/css">
+        #first{
+            width: 200px;
+            height: 200px;
+            background: green;
+            position:absolute;
+            left:0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="first">利用position：absolute；和margin：auto，加上TRBL值为0进行定位
+缺点：兼容性：,IE7及之前版本不支持
+</div>
+</body>
+</html>

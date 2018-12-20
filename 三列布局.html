@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>各种三列布局的实现与缺点</title>
+    <style type="text/css">
+        .left{
+            float:left;
+            width:300px;
+            height: 100px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<h1 align="center">这就是吴三凯的主页</h1>
+<div class="by-float">
+    <div class="left">左边固定</div>
+    <div class="center">
+        <h3>这是利用浮动的三列布局:</h3>
+        <div class="left">左边固定</div>
+        <span>浮动布局是有局限性的，浮动元素是脱离文档流，要做清除浮动，这个处理不好的话，会带来很多问题，比如高度塌陷等。
+        浮动布局的优点就是比较简单，兼容性也比较好。只要清除浮动做的好，是没有什么问题的。</span>
+    </div>
+    <div class="right">右边固定</div>
+</div>
+</body>
+</html>

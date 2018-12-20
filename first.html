@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        /*.body{*/
+            /*width:100%;*/
+            /*height:200px;*/
+            /*display:flex;*/
+            /*margin:30px;*/
+            /*background-color: #ff75a6;*/
+            /*border: black solid 5px;*/
+            /*box-sizing: border-box;*/
+        /*}*/
+        /*.left,.right{*/
+            /*width:200px;*/
+            /*height:100%;*/
+            /*margin:0 10px;*/
+            /*background-color:blue;*/
+        /*}*/
+        /*.center{*/
+            /*flex:1;*/
+            /*height:100%;*/
+            /*margin:0 10px;!*左右margin不会叠加*!*/
+            /*background-color:#f00;*/
+        /*}*/
+        .body{
+            width: 100%;
+            height: 300px;
+            background-color: pink;
+            display: flex;
+            border: black solid 2px;
+            box-sizing: border-box;
+        }
+        .left,.right{
+            width: 100px;
+            height: 100%;
+            margin: 0 15px;
+            background-color: aqua;
+        }
+        .center{
+            flex: auto;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+<h1 align="center">这就是吴三凯的主页</h1>
+<h5>这是利用flex的三列布局</h5>
+<div class="body">
+    <div class="left">左边</div>
+    <div class="center">中间</div>
+    <div class="right">右边</div>
+</div>
+</body>
+</html>

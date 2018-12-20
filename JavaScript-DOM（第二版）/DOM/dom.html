@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom</title>
+</head>
+<style type="text/css">
+    .spec{
+        font-style: italic;
+    }
+</style>
+<body>
+<p class="spec">this is spec class</p>
+<h2 class="spec">this is spec class</h2>
+<h1>What to buy</h1>
+<p title="a gentle reminder">Don't forget  to buy this stuff.</p>
+<ui id="purchases">
+    <li>A tin of beans</li>
+    <li class="sale">Cheese</li>
+    <li class="sale important">Milk</li>
+</ui>
+</body>
+<script>
+    // alert(typeof document.getElementById("purchases"))
+    // alert(document.getElementsByTagName("li").length)
+    var p1=document.getElementsByTagName("p")[1]
+    alert(p1.getAttribute("title"))
+    p1.setAttribute("title","wsk")
+    alert(p1.getAttribute("title"))
+</script>
+</html>

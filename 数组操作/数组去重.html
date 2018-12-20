@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组去重</title>
+</head>
+<body>
+['a', 'b', 'c', 'asd', 'asd', '5', '5', '5', '52', 'er', '55', 'b']<br>
+<button onclick="qc1()">去重利用双层循环和slice删除</button>
+<br>
+</body>
+<script>
+    function qc1() {
+        var qc1 = ['a', 'b', 'c', 'asd', 'asd', '5', '5', '5', '52', 'er', '55', 'b'];
+        for (var i = 0, j = qc1.length - 1; i < j; i++) {
+            for (var h = i + 1, q = qc1.length; h < q; h++) {
+                if (qc1[h]===qc1[i]){
+                    qc1.splice(h,1);
+                    h--;
+                }
+            }
+        }
+        alert(qc1)
+    }
+</script>
+</html>
