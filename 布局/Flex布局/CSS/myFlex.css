@@ -1,0 +1,81 @@
+.box > div {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: black solid 2px;
+    float: left;
+    box-sizing: border-box;
+    margin-right: -2px;
+}
+
+.box {
+    width: 520px;
+    height: 105px;
+    background-color: black;
+}
+
+.box1 {
+    width: 520px;
+    height: 105px;
+    background-color: black;
+}
+
+.box1 > div {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    border: black solid 2px;
+    float: left;
+}
+
+.flexbox {
+    margin-top: 100px;
+    width:700px;
+    background-color: fuchsia;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+}
+
+.flexbox > div {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1;
+    height: 100px;
+    border-right: black solid 1px;
+    border-top: black solid 1px;
+    border-bottom: black solid 1px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.redDiv {
+    border-left: black solid 1px;
+    background-color: red;
+}
+
+.orangeDiv {
+    background-color: orange;
+}
+
+.yellowDiv {
+    background-color: yellow;
+}
+
+.greenDiv {
+    background-color: green;
+}
+
+.qingDiv {
+    /*order: 1;∞¥–Ú∫≈≈≈–Ú*/
+    background-color: rgb(0,255,255);
+}
+
+.blueDiv {
+    background-color: blue;
+}
+
+.purpleDiv {
+    background-color: purple;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局</title>
+    <style media="screen">
+        html *{
+            padding: 0;
+            margin: 0;
+        }
+        .layout article div{
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+<!--浮动布局  -->
+<section class="layout float">
+    <style media="screen">
+        .layout.float .left{
+            float:left;
+            width:300px;
+            background: red;
+        }
+        .layout.float .center{
+            background: yellow;
+        }
+        .layout.float .right{
+            float:right;
+            width:300px;
+            background: blue;
+        }
+    </style>
+    <h1>三栏布局</h1>
+    <article class="left-right-center">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="center">
+            <h2>浮动解决方案</h2>
+            问题：
+            1.必须要考虑清楚浮动，浮动会脱离原本的文档流，不会占用空间，但是易发生高度坍塌的问题，；
+            2.必须先写左右浮动块，在写中间块（会先加载左右浮动部分，最后加载中间主体）；
+        </div>
+    </article>
+</section>
+</body>
+</html>

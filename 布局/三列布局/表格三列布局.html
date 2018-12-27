@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局</title>
+    <style media="screen">
+        html *{
+            padding: 0;
+            margin: 0;
+        }
+        .layout article div{
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 表格布局 -->
+<section class="layout table">
+    <style>
+        .layout.table .left-center-right{
+            width:100%;
+            height: 100px;
+            display: table;
+        }
+        .layout.table .left-center-right>div{
+            display: table-cell;
+        }
+        .layout.table .left{
+            width: 300px;
+            background: red;
+        }
+        .layout.table .center{
+            background: yellow;
+        }
+        .layout.table .right{
+            width: 300px;
+            background: blue;
+        }
+    </style>
+    <h1>三栏布局</h1>
+    <article class="left-center-right">
+        <div class="left"></div>
+        <div class="center">
+            <h2>表格布局解决方案</h2>
+            1.兼容性好；
+            2.当其中一个单元格超出高度时，;两侧单光格也会随着一起变高
+        </div>
+        <div class="right"></div>
+    </article>
+</section>
+</body>
+</html>

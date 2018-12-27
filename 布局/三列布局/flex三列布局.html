@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三列布局</title>
+    <style media="screen">
+        html *{
+            padding: 0;
+            margin: 0;
+        }
+        .layout article div{
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- flexbox布局 -->
+<section class="layout flexbox">
+    <style>
+        .layout.flexbox{
+            margin-top: 110px;
+        }
+        .layout.flexbox .left-center-right{
+            display: flex;
+        }
+        .layout.flexbox .left{
+            width: 300px;
+            background: red;
+        }
+        .layout.flexbox .center{
+            flex:1;
+            background: yellow;
+        }
+        .layout.flexbox .right{
+            width: 300px;
+            background: blue;
+        }
+    </style>
+    <h1>三栏布局</h1>
+    <article class="left-center-right">
+        <div class="left"></div>
+        <div class="center">
+            <h2>flexbox解决方案</h2>
+            1.IE8及以下不兼容；
+            2.比较好的方法，且支持移动端；避免了浮动和绝对定位带来的不利
+        </div>
+        <div class="right"></div>
+    </article>
+</section>
+</body>
+</html>

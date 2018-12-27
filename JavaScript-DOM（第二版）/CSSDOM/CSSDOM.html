@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSSDOM</title>
+    <link rel="stylesheet" href="CSS/my.css"/>
+    <style>
+        p{
+            color: green;
+            font-family: "Arial",sans-serif;
+        }
+    </style>
+</head>
+<body>
+<p>An example of a paragraph</p>
+<p style="color: #999999;font-family: Arial,sans-serif;font-size: 1em">An example of a paragraph</p>
+<p id="helloWorld">Hello World!</p>
+<script>
+    var  paras =document.getElementsByTagName("p");
+    for (var i=0;i<paras.length;i++){
+        paras[i].onclick=function () {
+            alert("You click on a paragraph")
+            console.log(this.style) //必须使用 this   另外：外部引用的CSS中的样式不能识别：
+            alert(this.style.fontFamily)
+            alert(this.style.color)
+            alert(this.style.fontSize)
+            alert(this.id)
+            if(this.id){
+                this.style.color="pink";
+            }
+        }
+    }
+</script>
+</body>
+</html>
